@@ -1,0 +1,30 @@
+/* Center the whole page */
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card style */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}

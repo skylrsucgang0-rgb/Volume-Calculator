@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Composite Prism Calculator";
+}
+
+<div class="main-container">
+    <div class="card">
+
+        <h1>Composite Rectangular Prism</h1>
+
+        <form method="post">
+
+            <h3>Prism 1</h3>
+            <input type="number" step="any" name="Length1" placeholder="Length" required />
+            <input type="number" step="any" name="Width1" placeholder="Width" required />
+            <input type="number" step="any" name="Height1" placeholder="Height" required />
+
+            <h3>Prism 2</h3>
+            <input type="number" step="any" name="Length2" placeholder="Length" />
+            <input type="number" step="any" name="Width2" placeholder="Width" />
+            <input type="number" step="any" name="Height2" placeholder="Height" />
+
+            <h3>Prism 3</h3>
+            <input type="number" step="any" name="Length3" placeholder="Length" />
+            <input type="number" step="any" name="Width3" placeholder="Width" />
+            <input type="number" step="any" name="Height3" placeholder="Height" />
+
+            <br>
+            <button type="submit">Calculate</button>
+        </form>
+
+       @if (Model.TotalVolume != 0)
+{
+    <h2>Total Volume: @Model.TotalVolume</h2>
+}
+
+    </div>
+</div>
+
